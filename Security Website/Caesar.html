@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Caesar Cipher Calculator</h1>
+
+    <div class="container">
+        <div class="input-group">
+            <label for="message">Message:</label>
+            <input type="text" id="message" value="If he had anything confidential to say">
+        </div>
+
+        <div class="input-group">
+            <label for="shift">Shift:</label>
+            <input type="number" id="shift" min="1" value="3">
+        </div>
+
+        <div class="input-group">
+            <label for="operation">Operation:</label>
+            <select id="operation">
+                <option value="encrypt">Encrypt</option>
+                <option value="decrypt">Decrypt</option>
+            </select>
+        </div>
+
+        <div class="button-container">
+            <button onclick="calculate()">Calculate</button>
+        </div>
+
+        <div class="input-group">
+            <label for="result">Result:</label>
+            <textarea id="result" rows="5" cols="50" readonly></textarea>
+        </div>
+    </div>
+
+    <script src="Caesar.js"></script>
+</body>
+</html>

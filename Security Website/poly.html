@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigenère Cipher Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Vigenère Cipher Calculator</h1>
+
+    <div class="container">
+        <div class="input-group">
+            <label for="message">Message:</label>
+            <input type="text" id="message" value="ATTACK AT DAWN">
+        </div>
+
+        <div class="input-group">
+            <label for="keyword">Keyword:</label>
+            <input type="text" id="keyword" value="LEMON">
+        </div>
+
+        <div class="input-group">
+            <label for="operation">Operation:</label>
+            <select id="operation">
+                <option value="encrypt">Encrypt</option>
+                <option value="decrypt">Decrypt</option>
+            </select>
+        </div>
+
+        <div class="button-container">
+            <button onclick="calculate()">Calculate</button>
+        </div>
+
+        <div class="input-group">
+            <label for="result">Result:</label>
+            <textarea id="result" rows="5" cols="50" readonly></textarea>
+        </div>
+    </div>
+
+    <script src="poly.js"></script>
+</body>
+</html>
